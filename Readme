@@ -1,0 +1,12 @@
+Pour faire un lien avec alpune et le host il faut aller dans les settings -> shared Folders. 
+Ajoutter une regle en paramettre tu met le Desktop , en folder name tu  alpine_desktop et tu coche auto mount.
+Dans ta machine virtuelle tu fais
+- mkdir -p /mnt/shared
+- apk add virtualbox-guest-additions linux-virt
+- reboot
+- modprobe -a vboxsf
+- mount -t vboxsf alpine_desktop /mnt/shared
+
+Pour acceder au dossier du pc il suffit d'aller au /mnt/shared
+
+
