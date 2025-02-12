@@ -1,4 +1,4 @@
-Pour faire un lien avec alpune et le host il faut aller dans les settings -> shared Folders. 
+Pour faire un lien avec alpine et le host il faut aller dans les settings -> shared Folders. 
 Ajoutter une regle en paramettre tu met le Desktop , en folder name tu  alpine_desktop et tu coche auto mount.
 Dans ta machine virtuelle tu fais
 - mkdir -p /mnt/shared
@@ -10,3 +10,8 @@ Dans ta machine virtuelle tu fais
 Pour acceder au dossier du pc il suffit d'aller au /mnt/shared
 
 
+docker build -t "name" 
+docker run -it --name "name" "image"
+docker exec -it "name" bash
+docker images ls
+docker system prune -af
